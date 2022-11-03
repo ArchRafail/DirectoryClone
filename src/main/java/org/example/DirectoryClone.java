@@ -8,6 +8,14 @@ public class DirectoryClone implements Runnable {
     private String sourceDirPath;
     private String targetDirPath;
 
+    /**
+     When program ask you to input the path to source directory, enter the next:
+     YourPath\DirectoryClone\src\main\resources\source
+     For example D:\Projects\Java\DirectoryClone\src\main\resources\source.
+     When program ask you to input the path to target directory, enter the next:
+     YourPath\DirectoryClone\src\main\resources\target
+     For example D:\Projects\Java\DirectoryClone\src\main\resources\target.
+     */
     public DirectoryClone() {
         System.out.print("Input the full path to source directory: ");
         this.sourceDirPath = DirectoryCreate.directoryInstanceCreate().getPathDir();

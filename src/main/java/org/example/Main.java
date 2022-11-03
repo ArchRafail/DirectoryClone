@@ -8,10 +8,11 @@ public class Main {
         try {
             cloneThread.join();
         } catch (InterruptedException e) {
-            throw new RuntimeException("Clone thread can't be forced!");
+            throw new RuntimeException("Clone thread interrupted!");
         }
         showResult(directoryClone);
     }
+
     public static void showResult(DirectoryClone directoryClone) {
         System.out.println("\nSource folder structure:");
         System.out.println(DirectoryPrint.printDirectoryStructure(directoryClone.getSourceDirPath()));
